@@ -224,11 +224,11 @@ void *club(void *data){
         int *alist = Dp(atemp); // Check duplicate item and change in trasnferlist change
         // print transferlist
         printf("Club-A prepares the list: Agent- %d: %s, Agent- %d: %s, Agent- %d: %s, Agent- %d: %s, and Agent- %d: %s\n", 
-               players[alist[0]].AgentID,players[alist[0]].position,
-               players[alist[1]].AgentID, players[alist[1]].position,
-               players[alist[2]].AgentID, players[alist[2]].position,
-               players[alist[3]].AgentID, players[alist[3]].position,
-               players[alist[4]].AgentID, players[alist[4]].position);
+               players[alist[0]].AgentID +1,players[alist[0]].position,
+               players[alist[1]].AgentID +1, players[alist[1]].position,
+               players[alist[2]].AgentID +1, players[alist[2]].position,
+               players[alist[3]].AgentID +1, players[alist[3]].position,
+               players[alist[4]].AgentID +1, players[alist[4]].position);
 
         pthread_t agentA[4]; //transfer thread
 
@@ -279,11 +279,12 @@ void *club(void *data){
         int *btemp = TransferList();
         int *blist = Dp(btemp);
 
-        printf("Club-B prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",players[blist[0]].AgentID,players[blist[0]].position,
-               players[blist[1]].AgentID, players[blist[1]].position,
-               players[blist[2]].AgentID, players[blist[2]].position,
-               players[blist[3]].AgentID, players[blist[3]].position,
-               players[blist[4]].AgentID, players[blist[4]].position);
+        printf("Club-B prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",
+        	players[blist[0]].AgentID +1,players[blist[0]].position,
+               players[blist[1]].AgentID+1, players[blist[1]].position,
+               players[blist[2]].AgentID+1, players[blist[2]].position,
+               players[blist[3]].AgentID+1, players[blist[3]].position,
+               players[blist[4]].AgentID+1, players[blist[4]].position);
 
         pthread_t agentB[4]; //transfer thread
 
@@ -331,11 +332,12 @@ void *club(void *data){
         int *ctemp = TransferList();
         int *clist = Dp(ctemp);
 
-        printf("Club-C prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",players[clist[0]].AgentID,players[clist[0]].position,
-               players[clist[1]].AgentID, players[clist[1]].position,
-               players[clist[2]].AgentID, players[clist[2]].position,
-               players[clist[3]].AgentID, players[clist[3]].position,
-               players[clist[4]].AgentID, players[clist[4]].position);
+        printf("Club-C prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",
+        	players[clist[0]].AgentID+1,players[clist[0]].position,
+               players[clist[1]].AgentID+1, players[clist[1]].position,
+               players[clist[2]].AgentID+1, players[clist[2]].position,
+               players[clist[3]].AgentID+1, players[clist[3]].position,
+               players[clist[4]].AgentID+1, players[clist[4]].position);
         pthread_t agentC[4]; //transfer thread
 
 
@@ -386,11 +388,12 @@ void *club(void *data){
         int *dtemp = TransferList();
         int *dlist = Dp(dtemp);
 
-        printf("Club-D prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",players[dlist[0]].AgentID,players[dlist[0]].position,
-               players[dlist[1]].AgentID, players[dlist[1]].position,
-               players[dlist[2]].AgentID, players[dlist[2]].position,
-               players[dlist[3]].AgentID, players[dlist[3]].position,
-               players[dlist[4]].AgentID, players[dlist[4]].position);
+        printf("Club-D prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",
+        	players[dlist[0]].AgentID+1,players[dlist[0]].position,
+               players[dlist[1]].AgentID+1, players[dlist[1]].position,
+               players[dlist[2]].AgentID+1, players[dlist[2]].position,
+               players[dlist[3]].AgentID+1, players[dlist[3]].position,
+               players[dlist[4]].AgentID+1, players[dlist[4]].position);
 
         pthread_t agentD[4]; //transfer thread
 
@@ -441,11 +444,12 @@ void *club(void *data){
         int *etemp = TransferList();
         int *elist = Dp(etemp);
 
-        printf("Club-E prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",players[elist[0]].AgentID,players[elist[0]].position,
-               players[elist[1]].AgentID, players[elist[1]].position,
-               players[elist[2]].AgentID, players[elist[2]].position,
-               players[elist[3]].AgentID, players[elist[3]].position,
-               players[elist[4]].AgentID, players[elist[4]].position);
+        printf("Club-E prepares the list: Agent- %d: %s, Agent-%d: %s, Agent-%d: %s, Agent-%d: %s, and Agent-%d: %s\n",
+        	players[elist[0]].AgentID+1,players[elist[0]].position,
+               players[elist[1]].AgentID+1, players[elist[1]].position,
+               players[elist[2]].AgentID+1, players[elist[2]].position,
+               players[elist[3]].AgentID+1, players[elist[3]].position,
+               players[elist[4]].AgentID+1, players[elist[4]].position);
 
         pthread_t agentE[4]; //transfer thread
 
@@ -490,7 +494,7 @@ void *Agent1(void *num){
     int pID = data->p_id;  // pID takes Player Id
     sem_wait(&negotiate[0]);// Every agent only 2 negotiate at the same time.
     if(clubName == 0){ //clubName 0 shows Club A
-        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
         //The club name was assigned an x string. X means that player is not in any club.
         if(strcmp(players[pID].club , "x")==0){
             //If Club A's budget is enough to buy the player.
@@ -538,7 +542,7 @@ void *Agent1(void *num){
                 printf("Club-A cannot transfer a forward from Agent-1 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-A cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-A cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -546,7 +550,7 @@ void *Agent1(void *num){
 
     }
     else if(clubName == 1){ ////clubName 2 shows Club B. Do Same think for Club B.
-        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(B.budget >= players[pID].Pbudget){
@@ -597,7 +601,7 @@ void *Agent1(void *num){
                 printf("Club-B cannot transfer a forward from Agent-1 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-B cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-B cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -606,7 +610,7 @@ void *Agent1(void *num){
 
     }
     else if(clubName == 2){
-        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(C.budget >= players[pID].Pbudget){
@@ -657,7 +661,7 @@ void *Agent1(void *num){
                 printf("Club-C cannot transfer a forward from Agent-1 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-C cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-C cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -666,7 +670,7 @@ void *Agent1(void *num){
 
     }
     else if(clubName == 3){
-        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(D.budget >= players[pID].Pbudget){
@@ -717,7 +721,7 @@ void *Agent1(void *num){
                 printf("Club-D cannot transfer a forward from Agent-1 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-D cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-D cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -726,7 +730,7 @@ void *Agent1(void *num){
 
     }
     else if(clubName == 4){
-        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(E.budget >= players[pID].Pbudget){
@@ -776,7 +780,7 @@ void *Agent1(void *num){
                 printf("Club-E cannot transfer a forward from Agent-1 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-E cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-E cannot transfer player is gone  another Club \n");
             }
 
             }
@@ -794,7 +798,7 @@ void *Agent2(void *num){
     int pID = data1->p_id;  // Player Id
     sem_wait(&negotiate[1]);
     if(clubName == 0){
-        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(A.budget >= players[pID].Pbudget){
@@ -844,7 +848,7 @@ void *Agent2(void *num){
                 printf("Club-A cannot transfer a forward from Agent-2 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-A cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-A cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -852,7 +856,7 @@ void *Agent2(void *num){
 
     }
     else if(clubName == 1){
-        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(B.budget >= players[pID].Pbudget){
@@ -902,7 +906,7 @@ void *Agent2(void *num){
                 printf("Club-B cannot transfer a forward from Agent-2 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-B cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-B cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[1]);
@@ -910,7 +914,7 @@ void *Agent2(void *num){
 
     }
     else if(clubName == 2){
-        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(C.budget >= players[pID].Pbudget){
@@ -960,7 +964,7 @@ void *Agent2(void *num){
                 printf("Club-C cannot transfer a forward from Agent-2 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-C cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-C cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[2]);
@@ -968,7 +972,7 @@ void *Agent2(void *num){
 
     }
     else if(clubName == 3){
-        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(D.budget >= players[pID].Pbudget){
@@ -1018,7 +1022,7 @@ void *Agent2(void *num){
                 printf("Club-D cannot transfer a forward from Agent-2 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-D cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-D cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -1027,7 +1031,7 @@ void *Agent2(void *num){
 
     }
     else if(clubName == 4){
-        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(E.budget >= players[pID].Pbudget){
@@ -1077,7 +1081,7 @@ void *Agent2(void *num){
                 printf("Club-E cannot transfer a forward from Agent-2 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-E cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-E cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -1095,7 +1099,7 @@ void *Agent3(void *num){
     int pID = data2->p_id;  // Player Id
     sem_wait(&negotiate[2]);
     if(clubName == 0){
-        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(A.budget >= players[pID].Pbudget){
@@ -1145,7 +1149,7 @@ void *Agent3(void *num){
                 printf("Club-A cannot transfer a forward from Agent-3 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-A cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-A cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -1154,7 +1158,7 @@ void *Agent3(void *num){
 
     }
     else if(clubName == 1){
-        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(B.budget >= players[pID].Pbudget){
@@ -1204,7 +1208,7 @@ void *Agent3(void *num){
                 printf("Club-B cannot transfer a forward from Agent-3 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-B cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-B cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[1]);
@@ -1212,7 +1216,7 @@ void *Agent3(void *num){
 
     }
     else if(clubName == 2){
-        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
         if(strcmp(players[pID].club , "x")==0){
             if(C.budget >= players[pID].Pbudget){
                 C.budget = C.budget - players[pID].Pbudget;
@@ -1261,7 +1265,7 @@ void *Agent3(void *num){
                 printf("Club-C cannot transfer a forward from Agent-3 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-C cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-C cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[2]);
@@ -1269,7 +1273,7 @@ void *Agent3(void *num){
 
     }
     else if(clubName == 3){
-        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
         if(strcmp(players[pID].club , "x")==0){
             if(D.budget >= players[pID].Pbudget){
                 D.budget = D.budget - players[pID].Pbudget;
@@ -1318,7 +1322,7 @@ void *Agent3(void *num){
                 printf("Club-D cannot transfer a forward from Agent-3 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-D cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-D cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[3]);
@@ -1326,7 +1330,7 @@ void *Agent3(void *num){
 
     }
     else if(clubName == 4){
-        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
         if(strcmp(players[pID].club , "x")==0){
             if(E.budget >= players[pID].Pbudget){
                 E.budget = E.budget - players[pID].Pbudget;
@@ -1375,7 +1379,7 @@ void *Agent3(void *num){
                 printf("Club-E cannot transfer a forward from Agent-3 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-E cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-E cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[4]);
@@ -1392,7 +1396,7 @@ void *Agent4(void *num){
     int pID = data3->p_id;  // Player Id
     sem_wait(&negotiate[3]);
     if(clubName == 0){
-        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club A negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(A.budget >= players[pID].Pbudget){
@@ -1442,14 +1446,14 @@ void *Agent4(void *num){
                 printf("Club-A cannot transfer a forward from Agent-4 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-A cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-A cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[0]);
 
     }
     else if(clubName == 1){
-        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club B negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(B.budget >= players[pID].Pbudget){
@@ -1499,7 +1503,7 @@ void *Agent4(void *num){
                 printf("Club-B cannot transfer a forward from Agent-4 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-B cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-B cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -1508,7 +1512,7 @@ void *Agent4(void *num){
 
     }
     else if(clubName == 2){
-        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club C negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
         if(strcmp(players[pID].club , "x")==0){
             if(C.budget >= players[pID].Pbudget){
                 C.budget = C.budget - players[pID].Pbudget;
@@ -1557,14 +1561,14 @@ void *Agent4(void *num){
                 printf("Club-C cannot transfer a forward from Agent-4 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-C cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-C cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[2]);
 
     }
     else if(clubName == 3){
-        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club D negotiates with Agent- %d for a %s player\n",  players[pID].AgentID+1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(D.budget >= players[pID].Pbudget){
@@ -1614,7 +1618,7 @@ void *Agent4(void *num){
                 printf("Club-D cannot transfer a forward from Agent-4 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-D cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-D cannot transfer player is gone  another Club \n");
             }
         }
         sem_post(&Club[3]);
@@ -1622,7 +1626,7 @@ void *Agent4(void *num){
 
     }
     else if(clubName == 4){
-        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID, players[pID].position);
+        printf("Club E negotiates with Agent- %d for a %s player\n",  players[pID].AgentID +1, players[pID].position);
 
         if(strcmp(players[pID].club , "x")==0){
             if(E.budget >= players[pID].Pbudget){
@@ -1672,7 +1676,7 @@ void *Agent4(void *num){
                 printf("Club-E cannot transfer a forward from Agent-4 since no %s left\n",players[pID].position);
             }
             else{
-                printf("Club-E cannot transfer player is gone CLub %s\n",players[pID].club);
+                printf("Club-E cannot transfer player is gone  another Club \n");
             }
         }
 
@@ -1681,3 +1685,6 @@ void *Agent4(void *num){
 
     }
 }
+
+
+
